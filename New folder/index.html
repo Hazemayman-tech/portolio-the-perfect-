@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO (HAZEM)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ol class="links">
+                <button onclick="goBack()">HOME</button>
+                <li class="active"><a href="#">About</a></li>
+                
+            </ol>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/x1VxtWqj8NSQZ82v/?mibextid=qi2Omg"><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://t.me/HazemAymanabdo"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://wa.me/qr/ASBJ6OOWBZPBP1"><i class="fa-brands fa-whatsapp"></i></i></a>
+            </div>
+            <i id="btnmenu" class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+
+    <div class="hero-sec">
+        <div class="container">
+            <div class="div-text">
+                
+                <ul>
+                    <li>
+                        <h2>Programming Skills</h2>
+                        <p>I have a solid foundation in programming, having studied C, C++, and Python. These languages have provided me with a deep understanding of both procedural and object-oriented programming concepts.</p>
+                    </li>
+                    <li>
+                        <h2>Web Development</h2>
+                        <p>I am proficient in HTML and CSS, allowing me to create and design elegant and responsive web pages.</p>
+                    </li>
+                    <li>
+                        <h2>Code.org </h2>
+                        <p>I have gained hands-on experience with Code.org, where I honed my coding and problem-solving skills through interactive projects and challenges.</p>
+                    </li>
+                    <li>
+                        <h2>Electronics Knowledge</h2>
+                        <p>Alongside programming, I have also studied electronics, enabling me to understand and work with basic circuits and electronic components.</p>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        let btnmenu = document.getElementById("btnmenu");
+        let navLinks = document.querySelector("nav ul.links");
+
+        btnmenu.onclick = function() {
+            btnmenu.classList.toggle("fa-times");
+            navLinks.classList.toggle("active");
+        }
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
